@@ -1,3 +1,4 @@
+//オブジェクト指向という明確な思想に基づいてクラス・メソッドが作られている
 public class Matango {
     String name;
     int hp;
