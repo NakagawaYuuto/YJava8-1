@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0327245b-0770-4398-847c-ad3960ea9431" name="変更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/Cleric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matango.java" beforeDir="false" afterPath="$PROJECT_DIR$/Matango.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/YJava8-1/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YJava8-1/Hero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YJava8-1/Cleric.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YJava8-1/Cleric.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/YJava8-1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YJava8-1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/YJava8-1/Matango.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YJava8-1/Matango.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,16 +104,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Main.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
