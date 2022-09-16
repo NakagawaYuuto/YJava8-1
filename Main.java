@@ -37,11 +37,34 @@ public class Main {
         参照の解決、アドレス解決：変数から番地情報を取り出し、次にその番地にアクセスする。
 
          */
-        Hero h = new Hero();
-        h.name = "ミナト"; //nameの設定
-        h.hp = 100;//hpの設定
+        Sword s = new Sword();
+        s.name = "炎の剣";
+        s.damage = 10;
+
+        Hero h = new Hero("ミナト");
+//        h.name = "ミナト"; //nameの設定
+//        h.hp = 100; //hpの設定
+        Hero h1 = new Hero();
+        System.out.println(h.name);
+        System.out.println(h1.name + h1.hp);
+        h.sword =s; //swordフィールドの生成ずみの剣インスタンスの番地を代入してる
+        System.out.println("現在の武器は" + h.sword.name); //勇者(h)の剣（sword）の名前（name）
+        /*
+        勇者　h　の変数の番地から勇者インスタンスのSword領域から剣インスタンスのname領域にアクセスする
+         */
+        System.out.println(h.name + "は" + h.sword.name + "で攻撃した！");
         h.mp = 20;
         System.out.println("勇者" + h.name + "を生み出しました。" + h.hp);
+
+        Wizard w = new Wizard();
+        w.name = "スガワラ";
+        System.out.println("魔術師" + w.name + "を生み出した");
+        w.hp = 50;
+        w.heal(h);
+        System.out.println(h.hp);
+        w.heal(h);
+        System.out.println(h.hp);
+
 
         Hero h2;
         h2 = h;

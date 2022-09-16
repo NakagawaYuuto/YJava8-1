@@ -3,7 +3,20 @@ public class Hero {
     String name;
     int hp;
     int mp;
+    Sword sword;
 
+    public Hero(String name){
+        this.hp = 100;
+        /*　new された直後に自動的に実行される処理（コンストラクタ）
+            コンストラクタは開発者が直接読み出す物ではない（JVMによって呼び出される）
+            条件：メソッド名がクラス名と完全に等しい・メソッド宣言に戻り値が記述されていない voidも❌　*/
+        this.name = name;
+    }
+
+    //オーバーロード
+    public Hero(){
+        this ("ダミー");
+    }
 
     public void attack(){
         System.out.println(this.name + "は戦った！");
