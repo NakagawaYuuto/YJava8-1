@@ -16,9 +16,10 @@ public class Hero {
     //オーバーロード
     public Hero(){
         this ("ダミー");
+        System.out.println("Heroのコンストラクタが動作");
     }
 
-    public void attack(){
+    public void attack(Matango m){
         System.out.println(this.name + "は戦った！");
     }
 
@@ -39,7 +40,8 @@ public class Hero {
         System.out.println("HPが" + sec + "ポイント回復した。");
     }
 
-    public void slip(){
+    // これでslipメソッドは子クラスでのオーバーライド禁止になった。
+    public final void slip(){
         this.hp -= 5;
         System.out.println(this.name + "は転んだ。");
         System.out.println("5のダメージ");
@@ -47,8 +49,8 @@ public class Hero {
 
     public void run(){
         System.out.println(this.name + "は、逃げ出した。");
-        System.out.println("ゲームオーバー");
-        System.out.println("最終HPは" + this.hp + "です。");
+//        System.out.println("ゲームオーバー");
+//        System.out.println("最終HPは" + this.hp + "です。");
     }
 
 /*

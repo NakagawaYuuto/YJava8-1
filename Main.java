@@ -16,6 +16,24 @@
 */
 
 /*
+    正しい継承とは「is - a の原則」というルールに則っている継承。
+    「A　は　B　の一種である」という意味が自然であれば正しい継承。
+    例：　ヒーローはスーパーヒーローの一種である　○
+         家はアイテムの一種である　×
+
+    is-aの関係ではない継承をしてはいけない理由は・・・
+    将来、クラスを拡張していった場合に現実世界と矛盾が生じる。
+    オブジェクト指向の３台昨日の多様性を利用できなくなる。
+
+    子クラスになればなるほど「特殊で具体的なもの」具体化（特化）していき、
+    親クラスになるほど「抽象的で曖昧なもの」一般化（汎化）する。
+    キャラクターであれば、名前とHPは必ず持っているのでnameとhpは定義出来るが
+    具体的なキャラクターとして魔法使いになればMPや火の玉などを使うMPフィールドや
+    FireBallメソッドなどが加わる。（継承ツリーを書いてみる）
+    継承とは『ある２つのクラスに特化・汎化の関係があることを示す」ための道具でもある。
+ */
+
+/*
 クラス型と参照
     Java仮想世界として表現してきた「勇者」「お化けキノコ」「聖職者」等は、実際は「コンピューターのメモリ領域」
     実行する際にJVMが大量にメモリ領域を使って準備するもの。（ヒープ）
@@ -25,7 +43,8 @@
  */
 
 //Mainメソッドは天の声（神様クラス
-public class Main {
+// finalを付けると継承はできない。（外から弄れない）
+public final class Main {
     public static void main(String[] args) {
         /*勇者の生成
         Hero h :「Hero型の変数　h」をメモリ内に準備する。(Hero型の箱が準備されただけ）
@@ -44,9 +63,9 @@ public class Main {
         Hero h = new Hero("ミナト");
 //        h.name = "ミナト"; //nameの設定
 //        h.hp = 100; //hpの設定
-        Hero h1 = new Hero();
+//        Hero h1 = new Hero();
         System.out.println(h.name);
-        System.out.println(h1.name + h1.hp);
+//        System.out.println(h1.name + h1.hp);
         h.sword =s; //swordフィールドの生成ずみの剣インスタンスの番地を代入してる
         System.out.println("現在の武器は" + h.sword.name); //勇者(h)の剣（sword）の名前（name）
         /*
@@ -102,9 +121,39 @@ public class Main {
         System.out.println(m.name + "の体力は残り" + m.hp);
         m.run();
         m1.run();
-        h.run();
 
         //戦え勇者
         //逃げるキノコ
+
+        Thief t = new Thief("アサカ", 40, 5);
+        Thief t1 = new Thief("アサカ", 35);
+        Thief t2 = new Thief("アサカ");
+
+        h.run();
+        SuperHero sh = new SuperHero();
+        sh.run();
+
+        h.attack(m);
+
+        //コンストラクタは内側の部分のものから順に動いていく
+        SuperHero sh1 = new SuperHero();
+
+        Weapon we = new Weapon();
+
+        /*
+        練習問題
+        ①Student　は　Person　の1種である　○
+        ②Engine　は　Car　の1種である　×
+        ③Child　は　Father　の1種である　×
+        ④Susi　は　Food　の1種である　○
+        ⑤Man　は　 SuperMan　の 1種である　×
+
+        Character　Hero　SuperHero
+        機械　Phone　携帯電話
+        乗り物　Car　スーパーカー
+        book Dictionary 英語辞典
+         */
+
+
     }
 }

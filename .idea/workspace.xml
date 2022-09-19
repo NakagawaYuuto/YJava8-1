@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/YJava8-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YJava8-1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/YJava8-1/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YJava8-1/Hero.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/YJava8-1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/YJava8-1/Main.class" afterDir="false" />
     </list>
@@ -63,12 +64,13 @@
     <option name="flattenPackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/nakagawayuuto/Documents/YsJava/YJava8-1"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
